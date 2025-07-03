@@ -1,0 +1,1 @@
+# dlt-operacao-crypto-sentinela
