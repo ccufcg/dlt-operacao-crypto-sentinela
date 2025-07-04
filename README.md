@@ -384,24 +384,15 @@ Todas as Unidades Táticas devem:
 - **Registre logs** de todas as operações de segurança
 - **Falhe de forma segura** - em caso de dúvida, rejeite a mensagem
 
-**2. Testes Unitários:**
-```python
-def test_ciclo_completo():
-    """Teste o ciclo completo: criptografar -> transmitir -> descriptografar"""
-    # 1. Gere chaves de teste
-    # 2. Criptografe uma mensagem
-    # 3. Descriptografe e valide
-    # 4. Verifique se a mensagem original é recuperada
-```
 
-**3. Interface de Usuário:**
+**2. Interface de Usuário:**
 - Implemente comandos simples para:
   - `enviar_mensagem(destinatario, conteudo)`
   - `listar_chaves_confiadas()`
   - `revogar_unidade(unidade)`
   - `status_conexao_mqtt()`
 
-**5. Configuração:**
+**3. Configuração:**
 ```python
 # config.json
 {
