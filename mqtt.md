@@ -16,7 +16,7 @@ O servidor (Broker) tem `tópicos` - que um string, como `ufcg/cc/dlt`. Que cada
 
 ### Como vamos usar no nosso Laboratório?
 
-*   **Broker:** Usaremos um Broker público e gratuito para testes, localizado em `test.mosquitto.org`. Ele não requer cadastro.
+*   **Broker:** Usaremos um Broker público e gratuito para testes, localizado em `broker.hivemq.com`. Ele não requer cadastro.
 *   **Tópicos:** Para evitar que nossa turma interfira com outros usuários do Broker público, vamos padronizar nossos tópicos. A estrutura está descrita na tarefa.
 *   **Dados:** As mensagens (payloads) que enviamos via MQTT são strings. Portanto, nosso pacote de dados criptografado (que estará em formato JSON ou similar) deverá ser codificado em **Base64** antes de ser publicado.
 
@@ -41,7 +41,7 @@ import paho.mqtt.client as mqtt
 import time
 
 
-BROKER_ADDRESS = "test.mosquitto.org"
+BROKER_ADDRESS = "broker.hivemq.com"
 TOPIC = "ufcg/cc/dlt/menssagens" 
 MESSAGE = "Olá, mundo da criptografia! Esta é uma mensagem de teste."
 
@@ -85,7 +85,7 @@ O código abaixo utiliza um broker MQTT para **escutar múltiplos tópicos simul
 ```python
 import paho.mqtt.client as mqtt
 
-BROKER_ADDRESS = "test.mosquitto.org"
+BROKER_ADDRESS = "broker.hivemq.com"
 TOPICOS = [
     "ufcg/cc/dlt/wall",
     "ufcg/cc/dlt/menssagens",
