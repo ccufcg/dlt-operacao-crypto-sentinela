@@ -68,7 +68,7 @@ O "Sombra" pode ler todas as mensagens trocadas, o Sombra ainda não e capaz de 
 
 O sistema consiste em:
 
-*   **Canal de Comando Unificado (CCU):** Usaremos o Broker MQTT público `test.mosquitto.org`. Todo o tráfego é público.
+*   **Canal de Comando Unificado (CCU):** Usaremos o Broker MQTT público `broker.hivemq.com`. Todo o tráfego é público.
     *   Para uma explicação de como funciona o MQTT consulte o [link](./mqtt.md).
 *   **Unidades Táticas (UTs):** Cada grupo de alunos operará como uma UT e terá um identificador único (ex: `UT-Alfa`, `UT-Bravo`, ...)
     *   O codinome de cada equipe é secreto é sera enviado por e-mail
@@ -396,7 +396,7 @@ Todas as Unidades Táticas devem:
 ```python
 # config.json
 {
-  "mqtt_broker": "test.mosquitto.org",
+  "mqtt_broker": "broker.hivemq.com",
   "mqtt_port": 1883,
   "id_unidade": "ut-bravo",
   "arquivo_chaves": "chaves_confiaveis.json",
