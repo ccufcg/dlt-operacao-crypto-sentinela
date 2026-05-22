@@ -235,7 +235,7 @@ sisdef/direto/ut-bravo
 **Pacote final transmitido:**
 ```json
 {
-  "remetente" : "UT-Bravo",
+  "id_unidade" : "UT-Bravo",
   "ciphertext_b64": "kQwE7X9mNpY8...",
   "tag_autenticacao_b64": "mF3K8pL2nR...",
   "nonce_b64": "nR8kL3mP9qX...",
@@ -247,7 +247,7 @@ sisdef/direto/ut-bravo
 
    | Campo                       | Descrição                                         |
    |-----------------------------|---------------------------------------------------|
-   | `remetente`            | String(ciphertext)                                |
+   | `id_unidade`            | String(ciphertext)                                |
    | `ciphertext_b64`            | Base64(ciphertext)                                |
    | `tag_autenticacao_b64`                   | Base64(tag)                                       |
    | `nonce_b64`                 | Base64(nonce)                                     |
